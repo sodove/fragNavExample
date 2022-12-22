@@ -6,14 +6,25 @@
 
     <fragment
         android:id="@+id/navigationFirst"
-        android:name="ru.sodovaya.fragmentexamples.FirstFragment"
+        android:name="ru.sodovaya.fragmentexamples.fragments.FirstFragment"
         android:label="News"
         />
 
     <fragment
         android:id="@+id/navigationSecond"
-        android:name="ru.sodovaya.fragmentexamples.SecondFragment"
+        android:name="ru.sodovaya.fragmentexamples.fragments.SecondFragment"
         android:label="Settings"
         />
+    <fragment
+        android:id="@+id/navigationThird"
+        android:name="ru.sodovaya.fragmentexamples.fragments.ThirdFragment"
+        android:label="Memes"
+        />
+    <fragment
+        android:id="@+id/navigationFourth"
+        android:name="ru.sodovaya.fragmentexamples.fragments.FourthFragment"
+        android:label="Jokes"
+        />
+
 
 </navigation>

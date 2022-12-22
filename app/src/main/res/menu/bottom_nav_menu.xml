@@ -9,4 +9,14 @@
         android:id="@+id/navigationSecond"
         android:icon="@drawable/ic_settings"
         android:title="Settings"/>
+
+    <item
+        android:id="@+id/navigationThird"
+        android:icon="@drawable/ic_troll"
+        android:title="Memes"/>
+
+    <item
+        android:id="@+id/navigationFourth"
+        android:icon="@drawable/ic_settings"
+        android:title="Jokes"/>
 </menu>
