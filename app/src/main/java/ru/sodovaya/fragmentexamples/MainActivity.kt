@@ -1,11 +1,10 @@
 package ru.sodovaya.fragmentexamples
 
-import android.app.Activity
+import android.content.Context
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
@@ -20,7 +19,6 @@ import ru.sodovaya.fragmentexamples.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         val appBarConfig = AppBarConfiguration(
             setOf(R.id.navigationFirst, R.id.navigationSecond)
         )
+
+        val httpClient = MainApp.longlive.httpClient
 
         setSupportActionBar(binding.topAppBar)
 
